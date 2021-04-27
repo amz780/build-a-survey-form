@@ -1,9 +1,11 @@
+<!DOCTYPE html>
+
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Build a survey form/title>
+    <title>Build a survey form</title>
         <style>
 
         </style>
@@ -12,12 +14,21 @@
     <h1 id="title">Build a survey form</h1>
     <p id="description"></p>
     <form action="" id="survey-form">
-        <label for="name" id="name-label">Name</label>
-        <input type="text" id="name" name="name" required>
-        <label for="email" id="email-label">Email</label>
-        <input type="email" id="email" name="email">
+        <label for="name" id="name-label">Name</label><br>
+        <input type="text" id="name" name="name" placeholder="your name" required><br>
+        <label for="email" id="email-label">Email</label><br>
+        <input type="email" id="email" name="email" placeholder="your email"><br>
         <label for="age" id="age-label">Age</label>
-        <input type="range" min="10" max="99" name="age">
+        <input type="number" min="10" max="99" name="age" placeholder="your age"><br>
+        <label for="drop-down" id="drop-down-label">Which option best describes your current role?</label><br>
+        <select name="drop-down" id="drop-down" aria-placeholder="Select current role">
+            <option value="" disabled selected>Select current role</option>
+            <option value="student">student</option>
+            <option value="full-time-job">Full time job</option>
+            <option value="full-time-learner">Full time learner</option>
+            <option value="prefer-not-to-say">Prefer not to say</option>
+            <option value="other">Other</option>
+        </select>
     </form>
 </body>
 </html>
