@@ -7,44 +7,75 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Build a survey form</title>
         <style>
-
+            
+            
         </style>
 </head>
 <body>
-    <h1 id="title">Build a survey form</h1>
-    <p id="description"></p>
-    <form action="" id="survey-form">
-        <label for="name" id="name-label">Name</label><br>
-        <input type="text" id="name" name="name" placeholder="your name" required><br>
-        <label for="email" id="email-label">Email</label><br>
-        <input type="email" id="email" name="email" placeholder="your email"><br>
-        <label for="age" id="age-label">Age</label>
-        <input type="number" min="10" max="99" name="age" placeholder="your age"><br>
-        <label for="drop-down" id="drop-down-label">Which option best describes your current role?</label><br>
-        <select name="drop-down" id="drop-down" aria-placeholder="Select current role">
-            <option value="" disabled selected>Select current role</option>
-            <option value="student">student</option>
-            <option value="full-time-job">Full time job</option>
-            <option value="full-time-learner">Full time learner</option>
-            <option value="prefer-not-to-say">Prefer not to say</option>
-            <option value="other">Other</option>
-        </select>
-        <legend>Whould you reccomend freeCodeCamp to a friend</legend>
-        <input type="checkbox" name="definitely" id="definitely">Definitely<br>
-        <input type="checkbox" name="maybe" id="maybe">Maybe<br>
-        <input type="checkbox" name="not-sure" id="not-sure">Not sure<br>
-        <legend>What is your favorite feature of freeCodeCamp</legend>
-        <select name="drop-down-2" id="drop-down-2">
-            <option value="" disabled selected>Select an option</option>
-            <option value="challenges">Challenges</option>
-            <option value="projects">Projects</option>
-            <option value="community">Community</option>
-            <option value="open-source">Open Source</option>
-        </select>
-        <legend>What would you like to see improved? (Check all that apply)</legend>
-        <input type="checkbox" name="front-end-project" id="">Front-end Project<br>
-        <input type="checkbox" name="back-end-project" id="">back-end<br>
-        <input type="checkbox" name="data-visualization" id="">Data visualization<br>
-    </form>
-</body>
+<header>
+
+        <h1 id="title">Build a survey form</h1>
+        <p id="description"></p>
+
+    </header>
+<main>
+
+
+<form action="" id="survey-form">
+        
+        <div id="first">
+            
+            <label for="name" id="name-label">Name</label><br>
+            <input type="text" id="name" name="name" placeholder="your name" required><br>
+            <label for="email" id="email-label">Email</label><br>
+            <input type="email" id="email" name="email" placeholder="your email"><br>
+            <label for="age" id="age-label">Age</label>
+            <input type="number" min="10" max="99" name="age" placeholder="your age"><br>
+
+            </div>
+
+        <div id="second-drop-down">
+
+        
+            <label for="drop-down" id="drop-down-label">Which option best describes your current role?</label><br>
+            
+            <select name="drop-down" id="drop-down" aria-placeholder="Select current role">
+                <option value="" disabled selected>Select current role</option>
+                <option value="student">student</option>
+                <option value="full-time-job">Full time job</option>
+                <option value="full-time-learner">Full time learner</option>
+                <option value="prefer-not-to-say">Prefer not to say</option>
+                <option value="other">Other</option>
+            </select>
+
+            </div>
+
+            
+        <div id="third-radio">
+                
+                <legend>Whould you reccomend freeCodeCamp to a friend</legend>
+                
+                <input type="radio" name="test-radio" id="definitely">Definitely<br>
+                <input type="radio" name="test-radio" id="maybe">Maybe<br>
+                <input type="radio" name="test-radio" id="not-sure">Not sure<br>
+                
+                </div>
+        
+        <div id="forth-radio">
+
+                <legend>Whould you reccomend freeCodeCamp to a friend</legend>
+
+                <input type="radio" name="test-radio" id="definitely">Definitely<br>
+                <input type="radio" name="test-radio" id="maybe">Maybe<br>
+                <input type="radio" name="test-radio" id="not-sure">Not sure<br>
+                    
+                </div>
+                
+                
+            </form>
+
+        </main>
+
+    </body>
+
 </html>
